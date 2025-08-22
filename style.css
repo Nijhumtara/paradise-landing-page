@@ -1,0 +1,336 @@
+/* ===== GLOBAL STYLES ===== */
+*{
+    margin:0;
+    padding:0;
+    font-family:'Courier New', Courier, monospace;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+body{
+    height: fit-content;
+    width: 100%;
+    background-image: url("backgroundImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* ===== HERO SECTION ===== */
+#header_section{
+    height: auto;
+    width: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#header_section h1{
+    font-family: cursive;
+}
+#header_section p{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+#header_section a{
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    color:#219ebc;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+#header_section a:hover{
+    background-color: #fb8500;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* ===== FEATURE SECTION ===== */
+#feature {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    align-items: stretch;     
+    gap: 1rem;              
+    margin-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.box {
+    flex: 1 1 calc(25% - 1rem); 
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #023047;
+    border: 2px solid #ffb703;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    box-sizing: border-box;     
+    height: auto;            
+}
+.box img{
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* ===== CTA / JOURNEY SECTION ===== */
+#journey{
+    height: auto;
+    width: auto;
+    padding: 2rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    color: #fb8500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+#journey h2{
+    font-size: 1.5rem;
+}
+#journey p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0 1rem 0;
+}
+#journey a{
+    color: #fb8500;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#journey a i{
+    font-size: 1.5rem;
+}
+#journey a:hover{
+    color: #fff;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact{
+    height: auto;
+    width: auto;
+    padding: 1rem 0 1rem 0;
+    background-color: #fcbf49;
+    color: #023047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact p{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #023047;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0 2rem 0;
+}
+#contact_Info{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact a{
+    text-decoration: none;
+    color: #023047;
+}
+.contact i{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== FOOTER ===== */
+#footer{
+    height: auto;
+    width: auto;
+    padding: 1.5rem 0 1.5rem 0;
+    background-color: #caf0f8;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*===== Making Responsive =====*/
+@media(min-width: 768px) and (max-width: 1024px) and (max-height: 1368px){
+    #header_section p{
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #header_section a{
+        font-size: 2rem;
+    }
+    #journey h2{
+        font-size: 2rem;
+    }
+    #journey p{
+        font-size: 1.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #contact{
+        padding: 2rem 0 2rem 0;
+    }
+    #contact p{
+        font-size: 2rem;
+    }
+    #contact_Info{
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 2rem;
+    }
+    #footer{
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+}
+@media (max-width: 566px){
+    #header_section h1{
+        font-size: 2rem;
+    }
+    #header_section p{
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #header_section a{
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    #feature{
+        margin-top: 2.5rem;
+    }
+    .box {
+        flex: 1 1 calc(50% - 1rem); /* 2 boxes per row */
+    }
+    #journey h2{
+        font-size: 2rem;
+    }
+    #journey p{
+        font-size: 1.8rem;
+    }
+    #contact{
+        padding: 2rem 0 2rem 0;
+    }
+    #contact p{
+        font-size: 2rem;
+    }
+    #contact_Info{
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 2rem;
+    }
+    #footer{
+        padding: 1rem 3.5rem 1rem 3.5rem;
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+}
+@media(max-width: 430px){
+    #header_section p{
+        font-size: 1.7rem;
+    }
+    #header_section a{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    #journey h2{
+        font-size: 1.7rem;
+    }
+    #journey p{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #journey a{
+        font-size: 1.8rem;
+    }
+    #contact p{
+        font-size: 1.5rem;
+    }
+    #contact_Info{
+        font-size: 1.5rem;
+    }
+    #footer{
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+}
+@media(max-width: 414px){
+    #header_section h1{
+        font-size: 1.9rem;
+    }
+    .box {
+        flex: 1 1 100%; /* 1 box per row */
+    }
+}
+@media(max-width: 390px){
+    #header_section h1{
+        font-size: 1.8rem;
+    }
+    #footer{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+@media(max-width: 360px){
+    #header_section h1{
+        font-size: 1.7rem;
+    }
+    #footer{
+        padding: 1rem 1rem;
+    }
+}
+
+
