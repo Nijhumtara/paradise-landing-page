@@ -14,5 +14,5 @@ Modern & Simple Layout – Easy for future edits and customization
 <br>Tech Stack:
 HTML5, CSS3 (Flexbox, media queries, smooth scrolling), Font Awesome for icons.
 
-<br>View The Live Demo: https://Nijhumtara.github.io/paradise-landing-page
+<br>View The Live Demo:  https://nijhumtara.github.io/paradise-landing-page/
 
