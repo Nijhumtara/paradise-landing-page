@@ -1,6 +1,6 @@
 # paradise-landing-page
 
-<h2Paradise Landing Page<h2>
+<h2Paradise Landing Page</h2>
 A tropical-themed, fully responsive single-page website built with HTML5 & CSS3.
 This project is designed as a clean and modern landing page for a resort/hotel, following the client’s request for a paradise/tropical aesthetic.
 
